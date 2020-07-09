@@ -1,0 +1,15 @@
+D:\_git\QuestionnaireCounter\QuestionnaireCounter\QuestionnaireCounter\bin\Debug\QuestionnaireCounter.exe.config
+D:\_git\QuestionnaireCounter\QuestionnaireCounter\QuestionnaireCounter\bin\Debug\QuestionnaireCounter.exe
+D:\_git\QuestionnaireCounter\QuestionnaireCounter\QuestionnaireCounter\bin\Debug\QuestionnaireCounter.pdb
+D:\_git\QuestionnaireCounter\QuestionnaireCounter\QuestionnaireCounter\obj\Debug\QuestionnaireCounter.csprojAssemblyReference.cache
+D:\_git\QuestionnaireCounter\QuestionnaireCounter\QuestionnaireCounter\obj\Debug\MainWindow.g.cs
+D:\_git\QuestionnaireCounter\QuestionnaireCounter\QuestionnaireCounter\obj\Debug\App.g.cs
+D:\_git\QuestionnaireCounter\QuestionnaireCounter\QuestionnaireCounter\obj\Debug\QuestionnaireCounter_MarkupCompile.cache
+D:\_git\QuestionnaireCounter\QuestionnaireCounter\QuestionnaireCounter\obj\Debug\QuestionnaireCounter_MarkupCompile.lref
+D:\_git\QuestionnaireCounter\QuestionnaireCounter\QuestionnaireCounter\obj\Debug\MainWindow.baml
+D:\_git\QuestionnaireCounter\QuestionnaireCounter\QuestionnaireCounter\obj\Debug\QuestionnaireCounter.g.resources
+D:\_git\QuestionnaireCounter\QuestionnaireCounter\QuestionnaireCounter\obj\Debug\QuestionnaireCounter.Properties.Resources.resources
+D:\_git\QuestionnaireCounter\QuestionnaireCounter\QuestionnaireCounter\obj\Debug\QuestionnaireCounter.csproj.GenerateResource.cache
+D:\_git\QuestionnaireCounter\QuestionnaireCounter\QuestionnaireCounter\obj\Debug\QuestionnaireCounter.csproj.CoreCompileInputs.cache
+D:\_git\QuestionnaireCounter\QuestionnaireCounter\QuestionnaireCounter\obj\Debug\QuestionnaireCounter.exe
+D:\_git\QuestionnaireCounter\QuestionnaireCounter\QuestionnaireCounter\obj\Debug\QuestionnaireCounter.pdb
