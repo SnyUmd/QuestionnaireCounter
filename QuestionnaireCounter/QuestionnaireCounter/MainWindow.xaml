@@ -4,16 +4,24 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QuestionnaireCounter"
+        xmlns:wfm="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
         mc:Ignorable="d"
-        Title="MainWindow" Height="529.5" Width="519.447">
+        Title="MainWindow" Height="573.5" Width="519.447" KeyDown="GetKeyDown">
     <Grid>
         <Grid x:Name="GridAnswerBtn" HorizontalAlignment="Left" Height="68" Margin="10,65,0,0" VerticalAlignment="Top" Width="400">
-            <Button x:Name="BTN_1" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Margin="10,10,0,0" Height="50" Click="Click_BTN" Tag="1"/>
-            <Button x:Name="BTN_2" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Margin="90,10,0,0" Height="50" Click="Click_BTN" Tag="2"/>
-            <Button x:Name="BTN_3" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Margin="170,10,0,0" Height="50" Click="Click_BTN" Tag="3"/>
-            <Button x:Name="BTN_4" Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Margin="250,10,0,0" Height="50" Click="Click_BTN" Tag="4"/>
-            <Button x:Name="BTN_5" Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Margin="330,10,0,0" Height="50" Click="Click_BTN" Tag="5"/>
-            <Grid x:Name="GridUpDown" HorizontalAlignment="Left" Height="68" VerticalAlignment="Bottom" Width="91" Margin="405,0,-96,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="80"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="BTN_1" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Margin="10,10,0,0" Height="50" Click="Click_BTN" Tag="1" />
+            <Button x:Name="BTN_2" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Margin="8,10,0,0" Height="50" Click="Click_BTN" Tag="2" Grid.Column="1"/>
+            <Button x:Name="BTN_3" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Margin="7,10,0,0" Height="50" Click="Click_BTN" Tag="3" Grid.Column="2"/>
+            <Button x:Name="BTN_4" Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Margin="7,10,0,0" Height="50" Click="Click_BTN" Tag="4" Grid.Column="3"/>
+            <Button x:Name="BTN_5" Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Margin="10,10,0,0" Height="50" Click="Click_BTN" Tag="5" Grid.Column="4"/>
+            <Grid x:Name="GridUpDown" HorizontalAlignment="Left" Height="68" VerticalAlignment="Bottom" Width="91" Margin="85,0,-96,0" Grid.Column="4">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
@@ -25,8 +33,26 @@
         <Grid x:Name="GridList" HorizontalAlignment="Left" Height="326" Margin="10,138,0,0" VerticalAlignment="Top" Width="491">
             <DataGrid HorizontalAlignment="Left" Height="306" Margin="10,10,0,0" VerticalAlignment="Top" Width="471"/>
         </Grid>
-        <Button x:Name="BTN_Debug" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="491" Margin="10,469,0,0" Click="Click_Debug"/>
-        <Grid HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="491" Margin="10,10,0,0"/>
+        <Button x:Name="BTN_Debug" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="491" Margin="10,513,0,0" Click="Click_Debug"/>
+        <Grid Margin="0,0,10,478" HorizontalAlignment="Right" Width="491" Height="55" VerticalAlignment="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="20*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="問題数" VerticalAlignment="Center" RenderTransformOrigin="0.921,1" Margin="0,0,0,0" Height="26"/>
+            <WindowsFormsHost Grid.Column="1">
+                <wfm:NumericUpDown x:Name="Spin1" x:FieldModifier="public" 
+                               Value="10" Maximum="100" Minimum="1" ReadOnly="False" />
+            </WindowsFormsHost>
+            <Label Content="選択肢数" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.921,1" Height="26" Width="58" Grid.Column="2" Margin="0,14,0,15"/>
+            <WindowsFormsHost Grid.Column="3">
+                <wfm:NumericUpDown x:Name="Spin2" x:FieldModifier="public" 
+                               Value="5" Maximum="10" Minimum="0" ReadOnly="False" />
+            </WindowsFormsHost>
+        </Grid>
 
     </Grid>
 </Window>
