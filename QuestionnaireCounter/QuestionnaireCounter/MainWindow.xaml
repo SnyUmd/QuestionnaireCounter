@@ -33,16 +33,18 @@
         <Grid x:Name="GridList" HorizontalAlignment="Left" Height="326" Margin="10,138,0,0" VerticalAlignment="Top" Width="491">
             <DataGrid HorizontalAlignment="Left" Height="306" Margin="10,10,0,0" VerticalAlignment="Top" Width="471"/>
         </Grid>
-        <Button x:Name="BTN_Debug" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="491" Margin="10,513,0,0" Click="Click_Debug"/>
+        <Button x:Name="BTN_Debug" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="491" Margin="10,497,0,0" Click="Click_Debug"/>
         <Grid Margin="0,0,10,478" HorizontalAlignment="Right" Width="491" Height="55" VerticalAlignment="Bottom">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="5*"/>
                 <ColumnDefinition Width="5*"/>
                 <ColumnDefinition Width="5*"/>
                 <ColumnDefinition Width="5*"/>
-                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="7*"/>
+                <ColumnDefinition Width="7*"/>
+                <ColumnDefinition Width="7*"/>
             </Grid.ColumnDefinitions>
-            <Label Content="問題数" VerticalAlignment="Center" RenderTransformOrigin="0.921,1" Margin="0,0,0,0" Height="26"/>
+            <Label Content="問題数" VerticalAlignment="Center" RenderTransformOrigin="0.921,1" Margin="0,14,0,15" Height="26"/>
             <WindowsFormsHost Grid.Column="1">
                 <wfm:NumericUpDown x:Name="Spin1" x:FieldModifier="public" 
                                Value="10" Maximum="100" Minimum="1" ReadOnly="False" />
@@ -52,6 +54,8 @@
                 <wfm:NumericUpDown x:Name="Spin2" x:FieldModifier="public" 
                                Value="5" Maximum="10" Minimum="0" ReadOnly="False" />
             </WindowsFormsHost>
+            <Button x:Name="BTN_Run" Content="カウント開始" FontSize="9" Grid.Column="5" HorizontalAlignment="Center" Margin="17,10" VerticalAlignment="Center" Width="50" Height="35" IsEnabled="True" Click="Click_BTN"/>
+            <Button x:Name="BTN_Change" Content="変更" FontSize="9" Grid.Column="6" HorizontalAlignment="Center" Margin="17,10" VerticalAlignment="Center" Width="50" Height="35" IsEnabled="false" Click="Click_BTN"/>
         </Grid>
 
     </Grid>
